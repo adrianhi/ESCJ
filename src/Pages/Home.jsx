@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-backgroundColor ">
       <div className="bg-white w-full">
         <Slider />
       </div>

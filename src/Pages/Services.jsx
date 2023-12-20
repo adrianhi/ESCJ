@@ -2,7 +2,7 @@ import CardServices from "../components/Services/CardServices";
 
 const Services = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen bg-white">
       <div className="flex ">
         <div className="flex flex-col items-center justify-center mx-auto">
           <p className="mt-2 font-roboto font-bold text-2xl ">

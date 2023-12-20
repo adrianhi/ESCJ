@@ -8,7 +8,7 @@ import Footer from "./components/Global/Footer";
 import Contact from "./Pages/Contact";
 const App = () => {
   return (
-    <div className="App  bg-backgroundColor overflow-y-hidden">
+    <div>
       <Router>
         <Navbar />
         <Routes>
@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      <div className="mt-5">
+      <div>
         <Footer />
       </div>
     </div>
