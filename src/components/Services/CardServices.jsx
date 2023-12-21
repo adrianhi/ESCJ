@@ -8,11 +8,11 @@ const CardServices = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="grid grid-cols-2   ">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3	">
       {CardInfo.map((info, key) => (
         <div
           key={key}
-          className="flex justify-center items-center my-5 mx-auto"
+          className="flex  justify-center items-center my-5 mx-auto"
           data-aos="flip-left"
         >
           <CardActionArea>

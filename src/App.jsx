@@ -3,7 +3,6 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Navbar from "./components/Global/Navbar";
-import Footer from "./components/Global/Footer";
 
 import Contact from "./Pages/Contact";
 const App = () => {
@@ -18,9 +17,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };
