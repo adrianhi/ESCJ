@@ -3,12 +3,11 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Navbar from "./components/Global/Navbar";
-import Footer from "./components/Global/Footer";
 
 import Contact from "./Pages/Contact";
 const App = () => {
   return (
-    <div className="App  bg-backgroundColor overflow-y-hidden">
+    <div>
       <Router>
         <Navbar />
         <Routes>
@@ -18,9 +17,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      <div className="mt-5">
-        <Footer />
-      </div>
     </div>
   );
 };
