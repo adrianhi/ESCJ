@@ -1,29 +1,9 @@
-import { useEffect } from "react";
-import Aos from "aos";
 import ServicioCardMobile from "./ServicioCardMobile";
 import { LinkToServices } from "./LinkToServices";
+import { serviciosData } from "./Data/ServiciosData";
+import useAos from "../../Hooks/UseAos";
 const Servicios = () => {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
-
-  const serviciosData = [
-    {
-      titulo: "Lecciones de manejo",
-      descripcion:
-        "Ofrecemos lecciones adaptadas a las necesidades y habilidades individuales de cada estudiante.",
-    },
-    {
-      titulo: "Simulador de Conducción",
-      descripcion:
-        "Usamos simuladores de conducción para proporcionar experiencias prácticas en un entorno controlado.",
-    },
-    {
-      titulo: "Asesoramiento y Consulta",
-      descripcion:
-        "Proporcionamos asesoramiento personalizado sobre licencias y normativas de tráfico.",
-    },
-  ];
+  useAos();
 
   return (
     <div
@@ -54,9 +34,7 @@ const Servicios = () => {
 
         {/* Contenido para dispositivos móviles */}
         <div className="md:hidden">
-          {serviciosData.map((servicio, index) => (
-            <ServicioCardMobile key={index} {...servicio} />
-          ))}
+          <ServicioCardMobile />
           <div className="flex items-center justify-center mx-auto my-3">
             <LinkToServices />
           </div>

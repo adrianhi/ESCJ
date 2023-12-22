@@ -1,13 +1,11 @@
-import Aos from "aos";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { PreguntasFrecuentesData } from "./Data/PreguntasFrecuentesData.js";
+import useAos from "../../Hooks/UseAos.js";
 
 const PreguntasFrecuentes = () => {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-  }, []);
+  useAos();
 
   const [expanded, setExpanded] = useState(null);
 

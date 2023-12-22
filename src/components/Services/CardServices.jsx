@@ -1,12 +1,10 @@
-import Aos from "aos";
+import useAos from "../../Hooks/UseAos";
 import { CardInfo } from "./CardInfo";
-import { useEffect } from "react";
 
 import CardActionArea from "@mui/material/CardActionArea";
 const CardServices = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+  useAos();
+
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3	">
       {CardInfo.map((info, key) => (
